@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Professor orientando um aluno iniciante">
+  <rect width="320" height="180" fill="#23282d"/>
+  <circle cx="160" cy="80" r="80" fill="#c6ff00" opacity=".07"/>
+  <rect x="0" y="150" width="320" height="30" fill="#1a1e21"/>
+  <!-- professor -->
+  <path d="M112 150 L112 110 M128 150 L128 110" stroke="#263238" stroke-width="11" stroke-linecap="round"/>
+  <rect x="104" y="64" width="32" height="50" rx="10" fill="#37474f"/>
+  <text x="120" y="94" font-family="Arial, sans-serif" font-size="9" font-weight="900" text-anchor="middle" fill="#c6ff00">PROF</text>
+  <path d="M134 74 L168 66" stroke="#c68642" stroke-width="7" stroke-linecap="round"/>
+  <path d="M106 74 L98 104" stroke="#c68642" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="120" cy="50" r="13" fill="#c68642"/>
+  <path d="M107 47 a13 13 0 0 1 26 0 q-13 -7 -26 0z" fill="#111"/>
+  <!-- aluno com halter -->
+  <path d="M196 150 L196 112 M212 150 L212 112" stroke="#263238" stroke-width="11" stroke-linecap="round"/>
+  <rect x="188" y="68" width="32" height="48" rx="10" fill="#c6ff00"/>
+  <path d="M190 78 L178 98 L186 84" stroke="#f1c27d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M218 78 L232 92" stroke="#f1c27d" stroke-width="7" stroke-linecap="round"/>
+  <rect x="226" y="88" width="20" height="6" rx="3" fill="#90a4ae"/>
+  <rect x="224" y="82" width="6" height="18" rx="2" fill="#263238"/>
+  <rect x="242" y="82" width="6" height="18" rx="2" fill="#263238"/>
+  <circle cx="204" cy="54" r="13" fill="#f1c27d"/>
+  <path d="M191 51 a13 13 0 0 1 26 0 q-13 -7 -26 0z" fill="#263238"/>
+  <!-- balão de fala -->
+  <rect x="40" y="18" width="62" height="28" rx="10" fill="#f1f3f5"/>
+  <path d="M90 44 l10 10 l-2 -12z" fill="#f1f3f5"/>
+  <text x="71" y="37" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#111">Isso!</text>
+</svg>

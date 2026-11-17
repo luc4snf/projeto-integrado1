@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Bicicleta de spinning">
+  <rect width="320" height="180" fill="#23282d"/>
+  <circle cx="160" cy="70" r="80" fill="#c6ff00" opacity=".07"/>
+  <rect x="0" y="150" width="320" height="30" fill="#1a1e21"/>
+  <!-- base -->
+  <rect x="90" y="146" width="140" height="8" rx="4" fill="#37474f"/>
+  <!-- roda volante -->
+  <circle cx="200" cy="112" r="30" fill="#263238" stroke="#90a4ae" stroke-width="5"/>
+  <circle cx="200" cy="112" r="6" fill="#c6ff00"/>
+  <!-- quadro -->
+  <path d="M120 148 L140 70 M140 100 L200 112 M200 112 L215 60 M140 100 L160 112" stroke="#c6ff00" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <!-- banco -->
+  <rect x="122" y="60" width="38" height="10" rx="5" fill="#111"/>
+  <!-- guidão -->
+  <path d="M205 58 L236 52" stroke="#111" stroke-width="9" stroke-linecap="round"/>
+  <!-- pedal -->
+  <circle cx="160" cy="112" r="9" fill="#37474f"/>
+  <path d="M160 112 L172 128" stroke="#90a4ae" stroke-width="5" stroke-linecap="round"/>
+  <!-- linhas de velocidade -->
+  <path d="M40 80 h40 M30 100 h50 M45 120 h35" stroke="#c6ff00" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Pessoa em postura de yoga sobre um tapete">
+  <rect width="320" height="180" fill="#23282d"/>
+  <circle cx="160" cy="80" r="70" fill="#c6ff00" opacity=".08"/>
+  <!-- tapete -->
+  <rect x="70" y="150" width="180" height="10" rx="5" fill="#c6ff00"/>
+  <!-- perna de apoio -->
+  <path d="M160 150 L160 100" stroke="#263238" stroke-width="13" stroke-linecap="round"/>
+  <!-- perna dobrada (postura da árvore) -->
+  <path d="M160 102 L136 118 L158 128" stroke="#263238" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- tronco -->
+  <rect x="148" y="62" width="24" height="44" rx="10" fill="#7e57c2"/>
+  <!-- braços para cima -->
+  <path d="M152 68 L146 30 M168 68 L174 30" stroke="#f1c27d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M146 30 L160 18 L174 30" stroke="#f1c27d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- cabeça -->
+  <circle cx="160" cy="50" r="12" fill="#f1c27d"/>
+  <path d="M148 47 a12 12 0 0 1 24 0 q-12 -6 -24 0z" fill="#263238"/>
+  <!-- folhas -->
+  <path d="M260 140 q-20 -30 0 -60 q20 30 0 60z" fill="#69f0ae" opacity=".5"/>
+  <path d="M60 140 q-16 -24 0 -48 q16 24 0 48z" fill="#69f0ae" opacity=".4"/>
+</svg>

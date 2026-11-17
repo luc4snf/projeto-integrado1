@@ -1,0 +1,267 @@
+/* =========================================================
+   FitStart Academia - estilos globais
+   Paleta: fundo escuro + verde-limão (energia / ação)
+   ========================================================= */
+:root {
+  --bg: #0f1113;
+  --bg2: #16191c;
+  --card: #1e2226;
+  --texto: #f1f3f5;
+  --texto2: #b8c0c8;
+  --destaque: #c6ff00;
+  --destaque-esc: #a8d900;
+  --erro: #ff6b6b;
+  --sucesso: #69f0ae;
+  --borda: #2c3237;
+  --raio: 14px;
+  --sombra: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--texto);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--destaque); }
+.container { width: min(1100px, 100% - 32px); margin-inline: auto; }
+
+/* ---------- Tipografia (hierarquia) ---------- */
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; font-weight: 800; }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); line-height: 1.2; font-weight: 700; margin-bottom: .5rem; }
+h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: .4rem; }
+.destaque { color: var(--destaque); }
+.subtitulo { color: var(--texto2); font-size: 1.1rem; max-width: 640px; }
+.secao { padding: 72px 0; }
+.secao-alt { background: var(--bg2); }
+.secao-titulo { text-align: center; margin-bottom: 40px; }
+.secao-titulo .subtitulo { margin-inline: auto; }
+
+/* ---------- Cabeçalho e menu ---------- */
+.topo {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(15, 17, 19, .95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--borda);
+}
+.topo .container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--texto); text-decoration: none; letter-spacing: -.5px; }
+.logo span { color: var(--destaque); }
+
+.menu ul { list-style: none; display: flex; gap: 8px; align-items: center; }
+.menu a {
+  display: block; padding: 10px 14px; border-radius: 10px;
+  color: var(--texto); text-decoration: none; font-weight: 500;
+  transition: background .2s, color .2s;
+}
+.menu a:hover, .menu a:focus-visible { background: var(--card); color: var(--destaque); }
+.menu a[aria-current="page"] { color: var(--destaque); }
+.menu a.btn-menu { background: var(--destaque); color: #111; font-weight: 700; }
+.menu a.btn-menu:hover { background: var(--destaque-esc); color: #111; }
+
+/* Botão hambúrguer (aparece só no celular) */
+.hamburguer {
+  display: none; width: 48px; height: 48px;
+  background: none; border: 2px solid var(--borda); border-radius: 10px;
+  cursor: pointer; position: relative;
+}
+.hamburguer span, .hamburguer span::before, .hamburguer span::after {
+  position: absolute; left: 50%; width: 24px; height: 3px; margin-left: -12px;
+  background: var(--texto); border-radius: 2px; transition: transform .25s, background .25s;
+}
+.hamburguer span { top: 50%; margin-top: -1.5px; }
+.hamburguer span::before, .hamburguer span::after { content: ""; left: 0; margin-left: 0; }
+.hamburguer span::before { top: -8px; }
+.hamburguer span::after { top: 8px; }
+.hamburguer[aria-expanded="true"] span { background: transparent; }
+.hamburguer[aria-expanded="true"] span::before { transform: translateY(8px) rotate(45deg); }
+.hamburguer[aria-expanded="true"] span::after { transform: translateY(-8px) rotate(-45deg); }
+
+/* ---------- Botões (mesmo padrão em todo o site) ---------- */
+.btn {
+  display: inline-block; padding: 14px 26px; border-radius: 12px;
+  background: var(--destaque); color: #111; font-weight: 700; font-size: 1rem;
+  text-decoration: none; border: 2px solid var(--destaque); cursor: pointer;
+  transition: transform .15s, background .2s, box-shadow .2s;
+  font-family: inherit; min-height: 48px;
+}
+.btn:hover, .btn:focus-visible { background: var(--destaque-esc); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(198, 255, 0, .25); }
+.btn-secundario { background: transparent; color: var(--destaque); }
+.btn-secundario:hover, .btn-secundario:focus-visible { background: rgba(198, 255, 0, .1); }
+.botoes { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+
+/* ---------- Hero ---------- */
+.hero { padding: 64px 0 72px; }
+.hero .container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.hero .subtitulo { margin-top: 18px; }
+.hero-selo {
+  display: inline-block; padding: 6px 14px; border-radius: 999px; margin-bottom: 18px;
+  background: rgba(198, 255, 0, .12); color: var(--destaque); font-weight: 600; font-size: .9rem;
+}
+.hero-info { display: flex; gap: 28px; margin-top: 32px; flex-wrap: wrap; }
+.hero-info strong { display: block; font-size: 1.6rem; color: var(--destaque); }
+.hero-info small { color: var(--texto2); }
+
+/* Cabeçalho das páginas internas */
+.pagina-topo { padding: 56px 0 24px; text-align: center; }
+.pagina-topo .subtitulo { margin: 12px auto 0; }
+
+/* ---------- Cards ---------- */
+.grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.card {
+  background: var(--card); border: 1px solid var(--borda); border-radius: var(--raio);
+  padding: 24px; transition: transform .2s, border-color .2s;
+}
+.card:hover { transform: translateY(-4px); border-color: var(--destaque); }
+.card p { color: var(--texto2); }
+.card .icone { font-size: 2rem; margin-bottom: 10px; }
+.card-dor { font-size: .9rem; color: var(--erro) !important; font-weight: 600; margin-bottom: 4px; }
+
+.card-img { padding: 0; overflow: hidden; }
+.card-img img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #23282d; }
+.card-img .card-corpo { padding: 20px 22px 24px; }
+.tag {
+  display: inline-block; margin-top: 10px; padding: 4px 10px; border-radius: 999px;
+  font-size: .8rem; font-weight: 600; background: rgba(198, 255, 0, .12); color: var(--destaque);
+}
+
+/* Passos */
+.passos { counter-reset: passo; }
+.passo { position: relative; padding-top: 56px; }
+.passo::before {
+  counter-increment: passo; content: counter(passo);
+  position: absolute; top: 20px; left: 24px; width: 36px; height: 36px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--destaque); color: #111; font-weight: 800;
+}
+
+/* Depoimentos */
+.depoimento p { font-style: italic; color: var(--texto); }
+.depoimento cite { display: block; margin-top: 12px; font-style: normal; color: var(--destaque); font-weight: 600; }
+
+/* Faixa CTA */
+.cta {
+  text-align: center; padding: 56px 24px; border-radius: 20px;
+  background: linear-gradient(135deg, #1e2226, #253000);
+  border: 1px solid var(--destaque);
+}
+.cta .subtitulo { margin: 10px auto 0; }
+.cta .botoes { justify-content: center; }
+
+/* ---------- Tabela de horários ---------- */
+.tabela-wrap { overflow-x: auto; border-radius: var(--raio); border: 1px solid var(--borda); }
+table { width: 100%; border-collapse: collapse; min-width: 560px; }
+th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--borda); }
+th { background: var(--card); color: var(--destaque); }
+tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: rgba(255, 255, 255, .03); }
+
+/* ---------- Planos ---------- */
+.plano { display: flex; flex-direction: column; position: relative; }
+.plano .preco { font-size: 2.4rem; font-weight: 800; margin: 10px 0; color: var(--texto); }
+.plano .preco small { font-size: 1rem; color: var(--texto2); font-weight: 400; }
+.plano ul { list-style: none; margin: 10px 0 24px; flex: 1; }
+.plano li { padding: 6px 0 6px 28px; position: relative; color: var(--texto2); }
+.plano li::before { content: "✓"; position: absolute; left: 0; color: var(--destaque); font-weight: 800; }
+.plano .btn { text-align: center; }
+.plano-destaque { border: 2px solid var(--destaque); transform: scale(1.03); }
+.plano-destaque:hover { transform: scale(1.03) translateY(-4px); }
+.selo-plano {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--destaque); color: #111; padding: 4px 14px; border-radius: 999px;
+  font-size: .8rem; font-weight: 700; white-space: nowrap;
+}
+
+/* FAQ */
+.faq details {
+  background: var(--card); border: 1px solid var(--borda); border-radius: 12px;
+  padding: 16px 20px; margin-bottom: 12px;
+}
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq details p { margin-top: 10px; color: var(--texto2); }
+
+/* ---------- Formulário ---------- */
+.contato-grade { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
+.form { background: var(--card); border: 1px solid var(--borda); border-radius: var(--raio); padding: 28px; }
+.campo { margin-bottom: 18px; }
+.campo label, .campo legend { display: block; font-weight: 600; margin-bottom: 6px; }
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"],
+.campo select, .campo textarea {
+  width: 100%; padding: 12px 14px; border-radius: 10px; font-size: 1rem; font-family: inherit;
+  background: var(--bg); color: var(--texto); border: 2px solid var(--borda);
+  transition: border-color .2s;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus { outline: none; border-color: var(--destaque); }
+.campo fieldset { border: none; }
+.opcoes { display: flex; gap: 10px; flex-wrap: wrap; }
+.opcoes label {
+  display: flex; align-items: center; gap: 8px; font-weight: 400; margin: 0;
+  padding: 10px 14px; border: 2px solid var(--borda); border-radius: 10px; cursor: pointer;
+}
+.opcoes input { accent-color: var(--destaque); width: 18px; height: 18px; }
+.campo.invalido input, .campo.invalido select, .campo.invalido textarea, .campo.invalido .opcoes label { border-color: var(--erro); }
+.msg-erro { color: var(--erro); font-size: .9rem; margin-top: 4px; min-height: 1.2em; }
+.obrigatorio { color: var(--destaque); }
+
+.info-contato .card { margin-bottom: 16px; }
+
+.resultado {
+  margin-top: 24px; padding: 24px; border-radius: var(--raio);
+  background: rgba(105, 240, 174, .08); border: 2px solid var(--sucesso);
+}
+.resultado h3 { color: var(--sucesso); }
+.resultado dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin-top: 12px; }
+.resultado dt { font-weight: 600; color: var(--texto2); }
+.resultado dd { word-break: break-word; }
+
+/* ---------- Jogo ---------- */
+.jogo-area { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+#jogo {
+  width: 100%; max-width: 900px; aspect-ratio: 2 / 1; height: auto;
+  border-radius: var(--raio); border: 2px solid var(--borda); background: #87ceeb;
+  touch-action: manipulation; cursor: pointer; box-shadow: var(--sombra);
+}
+.controles { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.instrucoes { max-width: 900px; width: 100%; }
+kbd {
+  background: var(--card); border: 1px solid var(--borda); border-bottom-width: 3px;
+  border-radius: 6px; padding: 2px 8px; font-family: inherit; font-size: .9rem;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape { border-top: 1px solid var(--borda); padding: 32px 0; margin-top: 40px; color: var(--texto2); font-size: .95rem; }
+.rodape .container { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* =========================================================
+   Responsividade
+   ========================================================= */
+@media (max-width: 860px) {
+  .hero .container, .contato-grade { grid-template-columns: 1fr; }
+  .hero-img { max-width: 360px; margin-inline: auto; order: -1; }
+  .plano-destaque { transform: none; }
+  .plano-destaque:hover { transform: translateY(-4px); }
+}
+
+@media (max-width: 768px) {
+  .hamburguer { display: block; }
+  .menu {
+    position: absolute; top: 70px; left: 0; right: 0;
+    background: var(--bg2); border-bottom: 1px solid var(--borda);
+    max-height: 0; overflow: hidden; transition: max-height .3s ease;
+  }
+  .menu.aberto { max-height: 420px; }
+  .menu ul { flex-direction: column; align-items: stretch; padding: 12px 16px 20px; gap: 4px; }
+  .menu a { padding: 14px 16px; font-size: 1.05rem; }
+  .menu a.btn-menu { text-align: center; margin-top: 8px; }
+  .secao { padding: 52px 0; }
+  .hero { padding: 36px 0 52px; }
+}
+
+@media (max-width: 480px) {
+  .botoes .btn { width: 100%; text-align: center; }
+  .form { padding: 20px; }
+  .resultado dl { grid-template-columns: 1fr; }
+}

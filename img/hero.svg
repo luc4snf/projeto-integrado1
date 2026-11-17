@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Aluno levantando uma barra com pesos">
+  <circle cx="200" cy="210" r="180" fill="#1e2226"/>
+  <circle cx="200" cy="210" r="155" fill="none" stroke="#c6ff00" stroke-width="4" stroke-dasharray="12 14"/>
+  <ellipse cx="200" cy="362" rx="90" ry="10" fill="#000" opacity=".35"/>
+  <!-- pernas -->
+  <path d="M185 275 L170 350 M215 275 L230 350" stroke="#263238" stroke-width="24" stroke-linecap="round"/>
+  <rect x="150" y="344" width="36" height="15" rx="7" fill="#f1f3f5"/>
+  <rect x="216" y="344" width="36" height="15" rx="7" fill="#f1f3f5"/>
+  <!-- short -->
+  <rect x="165" y="250" width="70" height="40" rx="10" fill="#37474f"/>
+  <!-- tronco -->
+  <rect x="163" y="170" width="74" height="95" rx="22" fill="#c6ff00"/>
+  <text x="200" y="228" font-family="Arial, sans-serif" font-size="26" font-weight="900" text-anchor="middle" fill="#111">FS</text>
+  <!-- braços levantados -->
+  <path d="M172 186 L132 150 L132 108 M228 186 L268 150 L268 108" stroke="#f1c27d" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- barra -->
+  <rect x="78" y="96" width="244" height="9" rx="4" fill="#90a4ae"/>
+  <rect x="82" y="70" width="20" height="60" rx="5" fill="#263238"/>
+  <rect x="64" y="80" width="16" height="40" rx="4" fill="#37474f"/>
+  <rect x="298" y="70" width="20" height="60" rx="5" fill="#263238"/>
+  <rect x="320" y="80" width="16" height="40" rx="4" fill="#37474f"/>
+  <!-- cabeça -->
+  <rect x="190" y="155" width="20" height="20" fill="#e0b070"/>
+  <circle cx="200" cy="140" r="27" fill="#f1c27d"/>
+  <path d="M173 136 a27 27 0 0 1 54 0 q-27 -14 -54 0z" fill="#263238"/>
+  <circle cx="191" cy="142" r="3" fill="#263238"/>
+  <circle cx="209" cy="142" r="3" fill="#263238"/>
+  <path d="M190 153 q10 8 20 0" stroke="#263238" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- brilhos de energia -->
+  <path d="M60 220 l14 -6 M52 250 l16 0 M340 220 l-14 -6 M348 250 l-16 0" stroke="#c6ff00" stroke-width="5" stroke-linecap="round"/>
+</svg>

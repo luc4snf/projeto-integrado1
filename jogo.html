@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogo Rumo à FitStart: ajude o Lucas a chegar na academia desviando das tentações.">
+  <title>Jogo | FitStart Academia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a href="index.html" class="logo">Fit<span>Start</span></a>
+      <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="jogo.html" aria-current="page">Jogo</a></li>
+          <li><a href="contato.html" class="btn-menu">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pagina-topo">
+      <div class="container">
+        <h1>Rumo à <span class="destaque">FitStart</span></h1>
+        <p class="subtitulo">Lucas decidiu sair do sedentário! Ajude ele a chegar na academia antes de fechar, fugindo das tentações pelo caminho.</p>
+      </div>
+    </section>
+
+    <section class="secao" style="padding-top: 16px;">
+      <div class="container jogo-area">
+        <canvas id="jogo" width="800" height="400" aria-label="Jogo Rumo à FitStart" role="img"></canvas>
+
+        <div class="controles">
+          <button type="button" id="btn-pular" class="btn">Pular / Começar</button>
+          <button type="button" id="btn-pausar" class="btn btn-secundario">Pausar</button>
+        </div>
+
+        <div class="grade instrucoes">
+          <article class="card">
+            <h3>🎮 Como jogar</h3>
+            <p>Aperte <kbd>Espaço</kbd>, <kbd>↑</kbd> ou toque na tela para pular. Aperte de novo no ar para dar um <strong>pulo duplo</strong>. <kbd>P</kbd> pausa o jogo.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Pegue</h3>
+            <p>🏋️ <strong>Halteres</strong>: +10 pontos.<br>💧 <strong>Água</strong>: recupera energia.</p>
+          </article>
+          <article class="card">
+            <h3>❌ Desvie</h3>
+            <p>🍔 Hambúrguer, 🥤 refrigerante e 🛋️ sofá tiram energia. Se a energia acabar, o Lucas desiste!</p>
+          </article>
+        </div>
+
+        <div class="cta" style="width:100%;max-width:900px">
+          <h2>O Lucas chegou. <span class="destaque">E você?</span></h2>
+          <p class="subtitulo">Sua primeira aula na FitStart é grátis.</p>
+          <div class="botoes"><a href="contato.html" class="btn">Agendar aula grátis</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 FitStart Academia — projeto acadêmico.</p>
+      <p>Rua dos Atletas, 123 · Seg a Sex 6h–23h · Sáb 8h–14h</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/jogo.js"></script>
+</body>
+</html>

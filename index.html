@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitStart Academia: a academia feita para quem nunca treinou. Professor do seu lado, treino montado para você e horários até 23h.">
+  <title>FitStart Academia | Comece a treinar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a href="index.html" class="logo">Fit<span>Start</span></a>
+      <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="jogo.html">Jogo</a></li>
+          <li><a href="contato.html" class="btn-menu">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: ação principal = agendar aula grátis -->
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="hero-selo">Academia para iniciantes</span>
+          <h1>Comece a treinar <span class="destaque">sem vergonha</span> e sem complicação</h1>
+          <p class="subtitulo">A FitStart é feita para quem nunca pisou numa academia: um professor do seu lado, treino montado para você e horários até as 23h.</p>
+          <div class="botoes">
+            <a href="contato.html" class="btn">Agendar aula grátis</a>
+            <a href="planos.html" class="btn btn-secundario">Ver planos</a>
+          </div>
+          <div class="hero-info">
+            <div><strong>6h às 23h</strong><small>Aberta todos os dias úteis</small></div>
+            <div><strong>R$ 79,90</strong><small>Planos a partir de</small></div>
+            <div><strong>1ª aula</strong><small>Grátis e sem compromisso</small></div>
+          </div>
+        </div>
+        <img class="hero-img" src="img/hero.svg" alt="Ilustração de um aluno levantando uma barra com pesos">
+      </div>
+    </section>
+
+    <!-- Dores da persona e como a academia resolve -->
+    <section class="secao secao-alt">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Feita para quem está <span class="destaque">começando</span></h2>
+          <p class="subtitulo">Sabemos o que trava quem quer sair do sedentarismo. Por isso pensamos em cada detalhe.</p>
+        </div>
+        <div class="grade">
+          <article class="card">
+            <div class="icone" aria-hidden="true">🧭</div>
+            <p class="card-dor">"Não sei por onde começar"</p>
+            <h3>Treino montado para você</h3>
+            <p>Na primeira semana um professor faz sua avaliação e monta um treino do seu nível, explicando cada aparelho.</p>
+          </article>
+          <article class="card">
+            <div class="icone" aria-hidden="true">🤝</div>
+            <p class="card-dor">"Tenho vergonha de treinar"</p>
+            <h3>Ambiente acolhedor</h3>
+            <p>Temos turmas só para iniciantes e área reservada. Aqui ninguém julga: todo mundo já foi o primeiro dia.</p>
+          </article>
+          <article class="card">
+            <div class="icone" aria-hidden="true">⏰</div>
+            <p class="card-dor">"Saio tarde do trabalho"</p>
+            <h3>Aberta até 23h</h3>
+            <p>Treinos de 45 minutos que cabem na sua rotina, inclusive depois do expediente.</p>
+          </article>
+          <article class="card">
+            <div class="icone" aria-hidden="true">💸</div>
+            <p class="card-dor">"Academia é cara"</p>
+            <h3>Preço justo</h3>
+            <p>Planos a partir de R$ 79,90 por mês, sem taxa de matrícula e com a primeira aula grátis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Passos -->
+    <section class="secao">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Comece em <span class="destaque">3 passos</span></h2>
+        </div>
+        <div class="grade passos">
+          <article class="card passo">
+            <h3>Agende sua aula grátis</h3>
+            <p>Preencha o formulário de contato e escolha o melhor período para você.</p>
+          </article>
+          <article class="card passo">
+            <h3>Faça sua avaliação</h3>
+            <p>O professor conversa com você, entende seu objetivo e mede seu condicionamento.</p>
+          </article>
+          <article class="card passo">
+            <h3>Treine com acompanhamento</h3>
+            <p>Receba seu treino e conte com o professor sempre que tiver dúvida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="secao secao-alt">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Quem começou aqui</h2>
+        </div>
+        <div class="grade">
+          <blockquote class="card depoimento">
+            <p>"Eu nunca tinha treinado e tinha muita vergonha. Na FitStart o professor me ensinou tudo do zero. Em 3 meses já perdi 6 kg!"</p>
+            <cite>— Rafael, 26 anos</cite>
+          </blockquote>
+          <blockquote class="card depoimento">
+            <p>"Saio do trabalho às 19h e consigo treinar com calma. O treino de 45 minutos encaixou certinho na minha rotina."</p>
+            <cite>— Juliana, 31 anos</cite>
+          </blockquote>
+          <blockquote class="card depoimento">
+            <p>"Preço justo e um ambiente onde ninguém fica olhando torto. Recomendo para quem está começando."</p>
+            <cite>— Marcos, 23 anos</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="secao">
+      <div class="container">
+        <div class="cta">
+          <h2>Seu primeiro treino é <span class="destaque">por nossa conta</span></h2>
+          <p class="subtitulo">Venha conhecer a academia, sem compromisso. Leva menos de 1 minuto para agendar.</p>
+          <div class="botoes">
+            <a href="contato.html" class="btn">Agendar aula grátis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 FitStart Academia — projeto acadêmico.</p>
+      <p>Rua dos Atletas, 123 · Seg a Sex 6h–23h · Sáb 8h–14h</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

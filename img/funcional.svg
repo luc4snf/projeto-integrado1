@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Kettlebell e corda do treino funcional">
+  <rect width="320" height="180" fill="#23282d"/>
+  <circle cx="60" cy="40" r="70" fill="#c6ff00" opacity=".08"/>
+  <rect x="0" y="145" width="320" height="35" fill="#1a1e21"/>
+  <!-- kettlebell -->
+  <path d="M128 72 a32 30 0 0 1 64 0" stroke="#37474f" stroke-width="14" fill="none"/>
+  <ellipse cx="160" cy="112" rx="48" ry="44" fill="#263238"/>
+  <ellipse cx="146" cy="98" rx="12" ry="10" fill="#455a64"/>
+  <rect x="140" y="104" width="40" height="18" rx="4" fill="#c6ff00"/>
+  <text x="160" y="118" font-family="Arial, sans-serif" font-size="13" font-weight="900" text-anchor="middle" fill="#111">16kg</text>
+  <!-- corda -->
+  <path d="M20 150 q40 -40 80 0 t80 0" stroke="#c6ff00" stroke-width="5" fill="none" opacity=".0"/>
+  <path d="M230 150 q20 -60 40 -20 t30 10" stroke="#c6ff00" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="220" y="140" width="20" height="10" rx="3" fill="#37474f"/>
+  <rect x="290" y="132" width="20" height="10" rx="3" fill="#37474f"/>
+  <!-- cone -->
+  <path d="M50 150 l16 -40 l16 40z" fill="#ff8a50"/>
+  <rect x="44" y="146" width="44" height="6" rx="3" fill="#e65100"/>
+</svg>
